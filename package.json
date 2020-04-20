@@ -28,6 +28,7 @@
   },
   "main": "dist/markdown-it-vue.umd.min.js",
   "dependencies": {
+    "@iktakahiro/markdown-it-prismjs": "^1.0.2",
     "echarts": "^4.5.0",
     "flowchart.js": "^1.13.0",
     "github-markdown-css": "^3.0.1",

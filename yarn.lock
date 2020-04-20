@@ -838,6 +838,13 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
+"@iktakahiro/markdown-it-prismjs@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/@iktakahiro/markdown-it-prismjs/download/@iktakahiro/markdown-it-prismjs-1.0.2.tgz#a65de28ef3c62b99b76d499c1e0d39f23c75dc85"
+  integrity sha1-pl3ijvPGK5m3bUmcHg058jx13IU=
+  dependencies:
+    prismjs "^1.8.1"
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -7107,6 +7114,13 @@ prismjs@1.19.0:
   version "1.19.0"
   resolved "https://registry.npm.taobao.org/prismjs/download/prismjs-1.19.0.tgz#713afbd45c3baca4b321569f2df39e17e729d4dc"
   integrity sha1-cTr71Fw7rKSzIVafLfOeF+cp1Nw=
+  optionalDependencies:
+    clipboard "^2.0.0"
+
+prismjs@^1.8.1:
+  version "1.20.0"
+  resolved "https://registry.npm.taobao.org/prismjs/download/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
+  integrity sha1-m2hfxICjUU7nGY6sajv1AkMZ/wM=
   optionalDependencies:
     clipboard "^2.0.0"
 
