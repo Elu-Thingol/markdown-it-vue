@@ -26,13 +26,14 @@ import MarkdownItLinkAttributes from './markdown-it-link-attributes'
 import MarkdownItEcharts from './markdown-it-plugin-echarts'
 import MarkdownItMermaid from './markdown-it-plugin-mermaid'
 import MarkdownItFlowchart from './markdown-it-plugin-flowchart'
-import MarkdownItPrism from "@iktakahiro/markdown-it-prismjs"
+
+import MarkdownItHighlight from './markdown-it-highlight'
+
+// import MarkdownItPrism from "@iktakahiro/markdown-it-prismjs"
 
 import 'github-markdown-css'
 import 'markdown-it-latex/dist/index.css'
 import 'markdown-it-icons/dist/index.css'
-
-import 'prismjs/themes/prism-solarizedlight.css'
 
 import echarts from 'echarts'
 import mermaid from 'mermaid'
@@ -132,13 +133,15 @@ export default {
             .use(MarkdownItInsert)
             .use(MarkdownItMark)
 
-            .use(MarkdownItPrism, {
-                plugins: [
-                    'line-numbers',
-                    'inline-color',
-                    'copy-to-clipboard'
-                ]
-            })
+            .use(MarkdownItHighlight)
+
+            // .use(MarkdownItPrism, {
+            //     plugins: [
+            //         'line-numbers',
+            //         'inline-color',
+            //         'copy-to-clipboard'
+            //     ]
+            // })
 
             .use(MarkdownItLatex)
             .use(MarkdownItSourceMap)
