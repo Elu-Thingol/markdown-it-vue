@@ -11,6 +11,7 @@ import MarkdownItFootnote from 'markdown-it-footnote'
 import MarkdownItDeflist from 'markdown-it-deflist'
 import MarkdownItAbbreviation from 'markdown-it-abbr'
 import MarkdownItInsert from 'markdown-it-ins'
+// import MarkdownItDelete from 'markdown-it-del'
 import MarkdownItMark from 'markdown-it-mark'
 import MarkdownItKatex from 'markdown-it-katex'
 import MarkdownItTasklists from 'markdown-it-task-lists'
@@ -19,11 +20,13 @@ import MarkdownItLatex from 'markdown-it-latex'
 import MarkdownItContainer from 'markdown-it-container'
 import MarkdownItGithubToc from 'markdown-it-github-toc'
 import MarkdownItSourceMap from 'markdown-it-source-map'
+import MarkdownItGithubHeadings from 'markdown-it-github-headings'
 import MarkdownItLinkAttributes from './markdown-it-link-attributes'
 import MarkdownItEcharts from './markdown-it-plugin-echarts'
 import MarkdownItMermaid from './markdown-it-plugin-mermaid'
 import MarkdownItFlowchart from './markdown-it-plugin-flowchart'
-import MarkdownItHighlight from './markdown-it-highlight'
+// import MarkdownItHighlight from './markdown-it-highlight'
+import MarkdownItPrism from 'markdown-it-prism'
 import 'github-markdown-css'
 import 'markdown-it-latex/dist/index.css'
 import 'markdown-it-icons/dist/index.css'
@@ -124,10 +127,13 @@ export default {
       .use(MarkdownItDeflist)
       .use(MarkdownItAbbreviation)
       .use(MarkdownItInsert)
+      // .use(MarkdownItDelete)
       .use(MarkdownItMark)
-      .use(MarkdownItHighlight)
+      // .use(MarkdownItHighlight)
+      .use(MarkdownItPrism)
       .use(MarkdownItLatex)
       .use(MarkdownItSourceMap)
+      .use(MarkdownItGithubHeadings)
       .use(MarkdownItMermaid)
       .use(MarkdownItEcharts)
       .use(MarkdownItFlowchart)
